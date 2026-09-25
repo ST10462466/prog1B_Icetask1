@@ -1,9 +1,9 @@
 package com.mycompany.grocerystore_inventory;
 
 public class Item {
-    String name;
-    Category category;
-    double price;
+    private String name;
+    private Category category;
+    private double price;
     
     
     public Item(String name, Category category, double price) {
@@ -12,4 +12,15 @@ public class Item {
         this.price = price;
     }
     
+    public String getName() {
+     return name;   
+    }
+    
+    public Category getCategory() {
+     return category;   
+    }
+    
+    public double getPrice() {
+     return price;   
+    }
 }
